@@ -1,227 +1,274 @@
 @use "abstracts" as a;
 
 .global-preload {
-  * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
-  }
+	* {
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-ms-transition: none !important;
+		-o-transition: none !important;
+		transition: none !important;
+	}
 }
 
 main {
-//   padding-top: 100px;
-//   @include a.breakpoint(md2) {
-//       padding-top: 135px;
-//   }
+	//   padding-top: 100px;
+	//   @include a.breakpoint(md2) {
+	//       padding-top: 135px;
+	//   }
 }
+
 .wrap {
-//   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+	//   min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
+
 .container {
-  max-width: 1366px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 25px;
-  @include a.breakpoint(sm) {
-      padding: 0 40px;
-  }
+	max-width: 1366px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 25px;
+
+	@include a.breakpoint(sm) {
+		padding: 0 40px;
+	}
 }
+
 .bg-black {
-  background: a.$color-black-1;
-  color: a.$color-white-1;
+	background: a.$color-black-1;
+	color: a.$color-white-1;
 }
+
 .bg-gray {
-  background: a.$color-gray-1;
+	background: a.$color-gray-1;
 }
+
 .bg-white {
-  background: a.$color-white-1;
+	background: a.$color-white-1;
 }
+
 .bg-primary {
-  background: a.$color-primary-1;
+	background: a.$color-primary-1;
 }
 
 .text-right {
-  text-align: right;
+	text-align: right;
 }
+
 .hero-section {
-  position: relative;
-  background: url('../img/home-img.png') no-repeat center center / cover;
-  @include a.breakpoint(lg) {
-      padding-bottom: 45px;
-     
-  }
-  &__inner {
-      width: 100%;
-      max-width: 1300px;
-      margin: 135px auto 0 auto;
-		@include a.breakpoint(md-wide){
+	position: relative;
+	background: url('../img/home-img.png') no-repeat center center / cover;
+
+	@include a.breakpoint(md-wide) {
+		margin-top: 135px;
+	}
+
+	@include a.breakpoint(lg) {
+		padding-bottom: 45px;
+
+	}
+
+	&__inner {
+		width: 100%;
+		max-width: 1300px;
+		margin: 135px auto 0 auto;
+
+		@include a.breakpoint(md-wide) {
 			margin: 0 auto;
 		}
-  }
-  &__body {
-      width: 100%;
-      background: rgba(0, 0, 0, 0.5);
-     @include a.breakpoint(lg)  {
-          width: 65%;
-          z-index: 10;
-          background: a.$color-black-1;
-          margin-left: auto;
-      }
-      padding: 40px 15px;
-      @include a.breakpoint(sm) {
-          padding: 70px 40px;
-      }
-  }
-  &__title {
-      padding: 5px 0 15px;
-  }
-  &__subtitle {
-      font-size: 14px;
-      @include a.breakpoint(sm) {
-          font-size: 21px;
-      }
-  }
-  &__btn {
-      @include a.breakpoint(sm) {
-          margin-left: 85px;
-      }
-  }
+	}
+
+	&__body {
+		width: 100%;
+		background: rgba(0, 0, 0, 0.5);
+
+		@include a.breakpoint(lg) {
+			width: 65%;
+			z-index: 10;
+			background: a.$color-black-1;
+			margin-left: auto;
+		}
+
+		padding: 40px 15px;
+
+		@include a.breakpoint(sm) {
+			padding: 70px 40px;
+		}
+	}
+
+	&__title {
+		padding: 5px 0 15px;
+	}
+
+	&__subtitle {
+		font-size: 14px;
+
+		@include a.breakpoint(sm) {
+			font-size: 21px;
+		}
+	}
+
+	&__btn {
+		@include a.breakpoint(sm) {
+			margin-left: 85px;
+		}
+	}
 }
+
 .intro-section {
-  padding: 30px 0 60px;
-  @include a.breakpoint(md2) {
-      padding: 40px 0 80px;
-  }
-  @include a.breakpoint(md-wide) {
-      padding: 60px 0 190px;
-  }
-  &__inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 50px;
-  }
+	padding: 30px 0 60px;
 
-  &__body {
-      @include a.breakpoint(md2) {
-          width: 80%;
-      }
-      @include a.breakpoint(md-wide) {
-        width: 40%;
-    }
-  }
+	@include a.breakpoint(md2) {
+		padding: 40px 0 80px;
+	}
 
-  &__title {
-      padding-bottom: 32px;
-  }
+	@include a.breakpoint(md-wide) {
+		padding: 60px 0 190px;
+	}
 
-  &__text {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 36px;
-      @include a.breakpoint(md2) {
-          font-size: 20px;
-      }
-  }
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 50px;
+	}
 
-  &__img {
-      display: none;
-      @include a.breakpoint(md2) {
-          display: block;
-      }
-  }
+	&__body {
+		@include a.breakpoint(md2) {
+			width: 80%;
+		}
+
+		@include a.breakpoint(md-wide) {
+			width: 40%;
+		}
+	}
+
+	&__title {
+		padding-bottom: 32px;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 36px;
+
+		@include a.breakpoint(md2) {
+			font-size: 20px;
+		}
+	}
+
+	&__img {
+		display: none;
+
+		@include a.breakpoint(md2) {
+			display: block;
+		}
+	}
 }
 
 .impressum {
-  &__body {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 60px 15px 120px;
-      color: a.$color-black-1;
-      line-height: 32px;
-      font-weight: 500;
-      @include a.breakpoint(sm) {
-          padding: 60px 35px 120px;
-      }
-      @include a.breakpoint(md1) {
-          padding: 120px 15px;
-      }
-  }
-}
-.cta {
-  padding: 25px 25px 40px;
-  margin: 50px 0;
-  border-radius: 8px;
-  @include a.breakpoint(sm) {
-    padding: 48px;
-  }
-  @include a.breakpoint(md2) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-  }
-  @include a.breakpoint(lg) {
-    margin: 50px 0;
-  }
-  &__head {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    img {
-      display: none;
-      @include a.breakpoint(sm) {
-        display: inline-block;
-      }
-    }
-  }
-  &__body {
-    @include a.breakpoint(md2) {
-      max-width: 70%;
-    }
-  }
+	&__body {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 60px 15px 120px;
+		color: a.$color-black-1;
+		line-height: 32px;
+		font-weight: 500;
 
-  &__title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 45px;
-    padding-bottom: 15px;
-    @include a.breakpoint(sm) {
-      font-size: 40px;
-      line-height: 52px;
-    }
-  }
-  &__btn {
-    padding: 18px 15px;
-    border-radius: 5px;
-    margin-top: 25px;
-    width: 100%;
-    @include a.breakpoint(sm) {
-      padding: 18px 33px;
-      width: fit-content;
-    }
-    @include a.breakpoint(md2) {
-      margin-top: 0;
-    }
-  }
+		@include a.breakpoint(sm) {
+			padding: 60px 35px 120px;
+		}
+
+		@include a.breakpoint(md1) {
+			padding: 120px 15px;
+		}
+	}
 }
+
+.cta {
+	padding: 25px 25px 40px;
+	margin: 50px 0;
+	border-radius: 8px;
+
+	@include a.breakpoint(sm) {
+		padding: 48px;
+	}
+
+	@include a.breakpoint(md2) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 30px;
+	}
+
+	@include a.breakpoint(lg) {
+		margin: 50px 0;
+	}
+
+	&__head {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		img {
+			display: none;
+
+			@include a.breakpoint(sm) {
+				display: inline-block;
+			}
+		}
+	}
+
+	&__body {
+		@include a.breakpoint(md2) {
+			max-width: 70%;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 45px;
+		padding-bottom: 15px;
+
+		@include a.breakpoint(sm) {
+			font-size: 40px;
+			line-height: 52px;
+		}
+	}
+
+	&__btn {
+		padding: 18px 15px;
+		border-radius: 5px;
+		margin-top: 25px;
+		width: 100%;
+
+		@include a.breakpoint(sm) {
+			padding: 18px 33px;
+			width: fit-content;
+		}
+
+		@include a.breakpoint(md2) {
+			margin-top: 0;
+		}
+	}
+}
+
 .checklist {
-  max-width: fit-content;
-  text-align: left;
-  &__item {
-    position: relative;
-    padding-left: 30px;
-    padding-bottom: 5px;
-    &::before {
-      content: url('../img/svg-icons/checkmark.svg');
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-  }
+	max-width: fit-content;
+	text-align: left;
+
+	&__item {
+		position: relative;
+		padding-left: 30px;
+		padding-bottom: 5px;
+
+		&::before {
+			content: url('../img/svg-icons/checkmark.svg');
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
 }
