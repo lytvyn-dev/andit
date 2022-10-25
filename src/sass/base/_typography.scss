@@ -1,0 +1,88 @@
+@use "abstracts" as a;
+
+@include a.font("DMSans", "DMSans-Regular", "400", "normal");
+@include a.font("DMSans", "DMSans-Medium", "500", "normal");
+@include a.font("DMSans", "DMSans-Bold", "700", "normal");
+
+.caption {
+    font-weight: 700;
+    line-height: 34px;
+    font-size: 24px;
+    @include a.breakpoint(sm) {
+        line-height: 56px;
+        font-size: 32px;
+    }
+}
+.caption--md {
+    font-size: 28px ;
+    line-height: 42px;
+    @include a.breakpoint(sm) {
+        font-size: 38px;
+    }
+    @include a.breakpoint(md1) {
+        line-height: 56px;
+        font-size: 48px;
+    }
+}
+.caption--lg {
+    font-size: 32px;
+    @include a.breakpoint(xs) {
+        font-size: 38px;
+    }
+    @include a.breakpoint(sm) {
+        font-size: 46px;
+    }
+    @include a.breakpoint(md2) {
+        font-size: 56px;
+    }
+}
+.caption--xl {
+    line-height: 68px;
+    font-size: 42px;
+    @include a.breakpoint(sm) {
+        font-size: 52px;
+    }
+    @include a.breakpoint(md1) {
+        font-size: 70px;
+    }
+}
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+.text-sm {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+.text-black {
+    color: a.$color-black-1;
+}
+.text-white {
+    color: a.$color-white-1;
+}
+.text-grey {
+    color: #8E8F93;
+}
+.text-primary {
+    color: a.$color-primary-1;
+}
+.text-red {
+    color: a.$color-red-1;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.link {
+    display: block;
+    color: a.$color-black-1;
+    padding: 30px 0 0;
+    text-decoration: underline;
+}

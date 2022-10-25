@@ -1,0 +1,269 @@
+@use "abstracts" as a;
+
+.product-hero {
+    padding: 25px 0;
+    @include a.breakpoint(md2) {
+        padding: 50px 0 100px; 
+    }
+    &__inner {
+        @include a.breakpoint(md1) {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            gap: 80px;
+            padding-right: 0;
+        }
+    }
+    &__title {
+        padding-bottom: 25px;
+    }
+    &__body {
+        @include a.breakpoint(md1) {
+            width: 60%;
+        }
+        @include a.breakpoint(md-wide) {
+            width: 45%;
+        }
+    }
+
+    &__buttons {
+        margin: 30px 0 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        @include a.breakpoint(sm) {
+            margin: 30px 0 10px;
+        }
+        @include a.breakpoint(md1) {
+            margin: 55px 0 10px;
+            width: 100%;
+        }
+    }
+    &__btn {
+        border-radius: 5px;
+    }
+    &__bottom-text {
+        padding-top: 30px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        padding-bottom: 15px;
+        @include a.breakpoint(sm) {
+            padding-top: 50px;
+        }
+        @include a.breakpoint(md1) {
+            padding-top: 80px;
+        }
+    }
+
+    &__image {
+        display: none;
+        position: relative;
+        max-width: 640px;
+        @include a.breakpoint(md1) {
+            display: block;
+        }
+        img {
+            height: auto;
+        }
+    }
+    &__dots {
+        position: absolute;
+        left: -10%;
+        bottom: 90px;
+        z-index: -1;
+    }
+}
+.hero-checklist {
+    display: flex;
+    flex-wrap: wrap;
+    @include a.breakpoint(md1) {
+        justify-content: space-between;
+    }
+    &__col {
+        margin-right: 60px;
+        @include a.breakpoint(md1) {
+            margin-right: 20px;
+        }
+    }
+}
+
+.problems {
+    padding: 30px 0 60px;
+    @include a.breakpoint(sm) {
+        padding: 50px 0 90px;
+    }
+    @include a.breakpoint(md1) {
+        padding: 125px 0 119px;
+    }
+    &__subtitle {
+        padding-top: 15px;
+        font-weight: 500;
+    }
+
+    &__body {
+        margin-top: 80px;
+        @include a.breakpoint(sm) {
+            display: flex;
+            justify-content: space-around;
+        }
+        @include a.breakpoint(md2) {
+            gap: 90px;
+        }
+    }
+}
+.problems-item {
+    text-align: center;
+    margin-bottom: 50px;
+    @include a.breakpoint(sm) {
+        width: 33.333%;
+    }
+    img {
+        margin: auto;
+    }
+    &__text {
+        font-weight: 700;
+        padding-top: 30px;
+        @include a.breakpoint(md2) {
+            padding-top: 60px;
+        }
+    }
+}
+.services {
+    padding: 50px 0;
+    @include a.breakpoint(md1) {
+        padding: 100px 0;
+        
+    }
+}
+.services-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 100px;
+    @include a.breakpoint(md1) {
+       flex-direction: row;
+       justify-content: space-between;
+       gap: 60px;
+    }
+		&__body {
+            text-align: inherit;
+            @include a.breakpoint(md1, max) {
+                text-align: center;
+                padding-top: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            @include a.breakpoint(lg) {
+                width: 45%;
+            }
+		}
+
+		&__title {
+            padding-bottom: 30px;
+            @include a.breakpoint(md1) {
+                padding-bottom: 40px;
+            }
+		}
+
+		&__text {
+            padding: 0 0 40px 0;
+            @include a.breakpoint(md1) {
+                padding: 40px 0;
+            }
+		}
+
+		&__btn {
+            @include a.breakpoint(md1) {
+                margin-top: 20px;
+            }
+		}
+
+		&__img {
+            width: 50%;
+            order: -1;
+            @include a.breakpoint(md1) {
+                width: 40%;
+                order: 0;
+            }
+		}
+        &__link {
+            padding: 0 0 20px;
+        }
+        &__checklist {
+            padding-bottom: 30px !important;
+            @include a.breakpoint(md1) {
+               padding-bottom: 40px !important;
+            }
+        }
+}
+
+
+
+.hacking-methods {
+    padding-top: 50px;
+    &__body {
+        margin-top: 50px;
+        @include a.breakpoint(sm) {
+            display: flex;
+            flex-wrap: wrap;   
+            justify-content: space-between; 
+            gap: 40px;
+        }
+    }
+}
+.hacking-box {
+    flex: 1 1;
+    padding-left: 48px;
+    position: relative;
+    &:not(:last-of-type) {
+        margin-bottom: 30px;
+        @include a.breakpoint(sm) {
+            margin-bottom: 0;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+       margin: 0 0 10px 0;
+    }
+    
+    &__item {
+        font-size: 16px;
+        line-height: 28px;
+
+        color: #66676B;
+        opacity: 0.8;
+    }
+
+    &__link {
+        margin-top: auto;
+        white-space: nowrap;
+    }
+
+    &__square {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__square--white {
+        background: #E5E5E5;
+    }
+
+    &__square--grey {
+        background: #707070;
+    }
+
+    &__square--black {
+        background: #1A1A1F;
+    }
+}

@@ -1,0 +1,10 @@
+// Global
+$transition: 0.25s ease-out;
+
+// Slide animation
+$slide-duration: 0.55s;
+
+// Fade-in animation
+$fade-in-delay: $slide-duration;
+$fade-in-opacity: opacity 1.25s;
+$fade-in-transform: transform 0.5s;

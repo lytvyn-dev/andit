@@ -1,0 +1,45 @@
+@use "../variables" as a;
+
+// Align element in the center
+@mixin push-center {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+// Add 3 dots to the end of the string
+@mixin truncate($width) {
+  max-width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Hide or show an element, useful for fade in/out animations
+@mixin fade($type, $slide: null) {
+  @if $type== hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: a.$transition;
+    @if $slide == top {
+      transform: translateY(-15px);
+    }
+  } @else if $type== show {
+    visibility: visible;
+    opacity: 1;
+    transition: a.$transition;
+    @if $slide == top {
+      transform: translateY(0);
+    }
+  }
+}
+
+// Mobile Friendly Hover Mixin
+@mixin hover {
+  @media not all and (pointer: coarse) {
+    &:hover {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+@use "abstracts" as a;
+.footer {
+    margin-top: auto;
+    position: relative;
+    color: a.$color-white-1;
+    @include a.breakpoint(md2) {
+        background: url('../img/footer-bg.jpg') no-repeat center center / cover;
+    }
+    
+    &__inner {
+        display: flex;
+        flex-direction: column-reverse;
+        @include a.breakpoint(md2) {
+            padding: 250px 0 0;
+        }
+        @include a.breakpoint(md-wide) {
+            align-items: flex-end;
+            flex-direction: row;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        background: a.$color-black-1;
+        padding: 20px 25px 50px;
+        
+        @include a.breakpoint(md-wide) {
+            width: 45%;
+            padding: 50px 50px 70px;
+            gap: 80px;
+        }
+    }
+    &__left {
+        padding: 0 0 25px;
+        @include a.breakpoint(md-wide) {
+            flex: 1 1;
+         }
+    }
+
+    &__col {
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include a.breakpoint(sm){
+           flex: 1 1;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        padding: 0;
+        margin: 0;
+        @include a.breakpoint(md-wide) {
+            font-size: 12px;
+            color: #8E8F93;
+        }
+    }
+
+    &__link {
+        display: block;
+        font-family: 'DMSans';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        color: a.$color-gray-1;
+        margin: 20px 0 10px;
+        @include a.breakpoint(lg) {
+            margin: 50px 0 10px;
+        }
+    }
+    &__field {
+        background: none;
+        width: 100%;
+        height: 40px;
+        color: #ffffff;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+.footer-right__bottom {
+    margin-top: 50px;
+}
+.footer-form {
+    padding: 65px 20px 10px;
+    width: fit-content;
+    margin: 0 auto;
+    @include a.breakpoint(md-wide) {
+        padding: 65px 0 10px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        padding-bottom: 25px;
+    }
+
+    &__field {
+        position: relative;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #fff;
+        padding-right: 50px;
+    }
+}
+.field-box {
+    &__btn {
+        position: absolute;
+        right: 0;
+        top: -10px;
+        opacity: 0.3;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+}
+.copyright {
+    color: a.$color-white-1;
+    font-size: 16px;
+    display: block; 
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+    padding-top: 40px;
+    @include a.breakpoint(md1) {
+        text-align: left;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+

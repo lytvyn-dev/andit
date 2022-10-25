@@ -1,0 +1,318 @@
+@use "abstracts" as a;
+.benefits {
+  padding: 50px 0 40px;
+  @include a.breakpoint(sm) {
+    padding: 80px 0 60px;
+  }
+  @include a.breakpoint(md1) {
+    padding: 164px 0 127px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include a.breakpoint(md1) {
+      width: 43%;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    p {
+      margin: 30px 0;
+      @include a.breakpoint(md1) {
+        display: inline-block;
+        margin: 50px 0 50px 60px;
+      }
+    }
+  }
+
+  &__btn {
+    margin-right: auto;
+    @include a.breakpoint(md1) {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+  &__img {
+    flex-shrink: 0;
+    display: none;
+    @include a.breakpoint(md1) {
+      display: block;
+    }
+    &--mob {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 30px;
+      @include a.breakpoint(md1) {
+        display: none;
+      }
+    }
+  }
+}
+
+.home-general {
+  padding: 40px 0 80px;
+  @include a.breakpoint(md1) {
+    padding: 90px 0 120px;
+  }
+  &__inner {
+    @include a.breakpoint(md1) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+    }
+  }
+  &__body {
+    text-align: center;
+    margin-bottom: 50px;
+    @include a.breakpoint(md1) {
+      text-align: left;
+      width: 50%;
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    font-weight: 400;
+    padding-bottom: 30px;
+    @include a.breakpoint(md1) {
+      padding-bottom: 50px;
+    }
+  }
+  &__text {
+    line-height: 50px;
+    color: a.$color-primary-1;
+    display: block;
+    @include a.breakpoint(md1) {
+      line-height: 105px;
+      margin-left: 0;
+    }
+  }
+  &__img {
+    margin: 0 auto;
+    @include a.breakpoint(md1) {
+      display: block;
+    }
+  }
+}
+
+.hero-slider__body > .splide__list {
+  align-items: flex-end;
+}
+
+.memberships {
+  padding: 40px 0;
+  @include a.breakpoint(md2) {
+    padding: 80px 0;
+  }
+  &__title {
+    line-height: 40px;
+  }
+}
+.memberships-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  &__body {
+    padding: 35px 20px 25px;
+    flex: 1 1;
+    @include a.breakpoint(sm) {
+      padding: 20px;
+    }
+    @include a.breakpoint(md1) {
+      padding: 40px 25px 40px 40px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 28px;
+  }
+}
+
+.services-slider {
+  padding: 40px 0 80px;
+  margin-bottom: -2px;
+  @include a.breakpoint(md2) {
+    padding: 80px 0;
+  }
+  &__subtitle {
+    font-size: 16px;
+    @include a.breakpoint(md2) {
+      padding: 15px 0 30px;
+    }
+  }
+}
+
+.services-slide {
+  padding: 56px 24px 25px;
+  background: #2b2b33;
+  color: #f6f8fc;
+  display: flex;
+  flex-direction: column;
+  @include a.breakpoint(md2) {
+    max-width: 290px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 16px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 25px;
+  }
+
+  &__btn {
+    margin-top: auto;
+  }
+}
+
+.partners-section {
+  padding: 50px 0 90px;
+  @include a.breakpoint(md-wide) {
+    padding: 80px 0 127px;
+  }
+  @include a.breakpoint(md-wide) {
+    padding: 140px 0 127px;
+  }
+  &__body {
+    text-align: center;
+    @include a.breakpoint(md1) {
+      display: flex;
+      align-items: center;
+      gap: 90px;
+      text-align: left;
+    }
+  }
+}
+.partners-box {
+  @include a.breakpoint(sm) {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  @include a.breakpoint(md1) {
+    max-width: 60%;
+    margin: 0;
+    gap: 71px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 50px;
+    &:first-of-type {
+      margin-top: 40px;
+      @include a.breakpoint(sm) {
+        margin-top: 0;
+      }
+    }
+    @include a.breakpoint(sm) {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    width: 100%;
+    text-align: left;
+    padding: 32px 0 27px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 32px;
+    @include a.breakpoint(md2) {
+      font-size: 18px;
+    }
+  }
+}
+.partners-logo {
+  margin-top: 80px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-row-gap: 70px;
+  grid-column-gap: 100px;
+  img {
+    margin: 0 auto;
+  }
+}
+.services-list {
+  padding: 50px 0 30px;
+  @include a.breakpoint(sm) {
+    padding: 80px 0 60px;
+  }
+  @include a.breakpoint(md1) {
+    padding: 140px 0 0;
+  }
+  &__caption {
+    padding-bottom: 50px;
+    text-align: center;
+    @include a.breakpoint(md1) {
+      text-align: left;
+      padding-bottom: 100px;
+    }
+  }
+
+  &__body {
+    margin-top: 30px;
+    max-width: 880px;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-items: stretch;
+    align-items: stretch;
+    grid-column-gap: 45px;
+    grid-row-gap: 40px;
+    margin-bottom: 80px;
+    @include a.breakpoint(md1) {
+      margin-top: 58px;
+      margin-bottom: 160px;
+      grid-row-gap: 100px;
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 27px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #353639;
+    padding-bottom: 15px;
+    &:last-of-type {
+      padding-bottom: 20px;
+    }
+  }
+  &__btn {
+    margin-top: auto;
+  }
+}

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en" class="global-preload">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <header class="header">
+	<div class="container header__inner">
+		<a href="index.html" class="header__logo">
+			<picture><source srcset="img/logo-icon.webp" type="image/webp"><img src="img/logo-icon.png" width="180" height="80" alt="Logo"></picture>
+		</a>
+		<div class="menu header__body">
+			<nav class="header-nav">
+				<ul class="header-nav__list">
+					<li class="header-nav__item">
+						<div class="header-nav__link header-nav__link_mega-menu header-nav__link_dropdown">Cyber Security
+						</div>
+						<div class="mega-menu">
+							<div class="mega-menu__container">
+								<div class="mega-menu__content">
+									<p class="mega-menu__title">Cloud services</p>
+									<ul class="mega-menu__list">
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Migration to cloud</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Private / Hybrid
+												Clouds</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Cloud support / DevOps</a>
+										</li>
+									</ul>
+								</div>
+								<div class="mega-menu__content">
+									<p class="mega-menu__title">Penetration testing</p>
+									<ul class="mega-menu__list">
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Web & app penetration
+												testing</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Physical penetration
+												testing</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Hacking simulation</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Internal network
+												penetration testing</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">OWASP Top 10 audit</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Vulnerability test
+												(VAPT)</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__content">
+									<p class="mega-menu__title">IIoT Security</p>
+									<ul class="mega-menu__list">
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">OT security in industrial
+												IoT</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">IoT OWASP Top 10 audit</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Phishing simulation</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Consultancy</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">IT-OT convergence</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">OT security monitoring</a>
+										</li>
+									</ul>
+								</div>
+								<div class="mega-menu__content">
+									<p class="mega-menu__title">Social awareness</p>
+									<ul class="mega-menu__list">
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Phishing simulation</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Social awareness
+												training</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Social engineering
+												attack</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__content">
+									<p class="mega-menu__title">DevSecOps</p>
+									<ul class="mega-menu__list">
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Software security design
+												review</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Static code analysis</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Container
+												orchestration</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__content">
+									<p class="mega-menu__title">Manged Security</p>
+									<ul class="mega-menu__list">
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Digital Signature</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">24/7 Monitoring</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__content">
+									<p class="mega-menu__title">Cyber Sec architecture</p>
+									<ul class="mega-menu__list">
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Cloud cyber security</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="header-nav__item">
+						<div class="header-nav__link header-nav__link_mega-menu header-nav__link_dropdown">Software & App
+						</div>
+						<div class="mega-menu">
+							<div class="mega-menu__container">
+								<div class="mega-menu__content">
+									<p class="mega-menu__title">Software development</p>
+									<ul class="mega-menu__list">
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Custom development</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Web applications</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">App development</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Blockchain</a>
+										</li>
+									</ul>
+								</div>
+								<div class="mega-menu__content">
+									<p class="mega-menu__title">Mobile app</p>
+									<ul class="mega-menu__list">
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">iOS App</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Android App</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">PWA </a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__content">
+									<p class="mega-menu__title">IT Support</p>
+									<ul class="mega-menu__list">
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Backup Cloud & restore</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">IoT OWASP Top 10 audit</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Server support</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Installation of
+												services</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">IT-OT convergence</a></li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">1st & 2nd level
+												support</a>
+										</li>
+									</ul>
+								</div>
+								<div class="mega-menu__content">
+									<p class="mega-menu__title">IT Consulting</p>
+									<ul class="mega-menu__list">
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">Network implementation</a>
+										</li>
+										<li class="mega-menu__item"><a href="#" class="mega-menu__link">IT infrastructure
+												implementation </a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="header-nav__item">
+						<a href="#" class="header-nav__link">References</a>
+					</li>
+					<li class="header-nav__item header-nav__item_language">
+						<button type="button" class="header-nav__link header-nav__link_language header-nav__link_dropdown">EN</button>
+										<!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+	<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+ </svg> -->
+			<!-- <ul class="select__list">
+				<li class="select__item" data-value="EN">EN</li>
+				<li class="select__item" data-value="DE">DE</li>
+				<li class="select__item" data-value="AR">AR
+				</li>
+			</ul> -->
+					</li>
+					<li class="header-nav__item">
+						<a href class="header__btn btn btn-black-bg">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header-overlay"></div>
+		<div class="header-nav__item header-nav__item_none">
+			<button type="button" class="header-nav__link header-nav__link_language header-nav__link_dropdown">EN</button>
+			<!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+	<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+ </svg> -->
+			<!-- <ul class="select__list">
+				<li class="select__item" data-value="EN">EN</li>
+				<li class="select__item" data-value="DE">DE</li>
+				<li class="select__item" data-value="AR">AR
+				</li>
+			</ul> -->
+			<input type="text" name="camper-population" value="" class="select__input-hidden input-field" required>
+		</div>
+		<div class="menu__icon">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	</header></div>
+
+
+
+
+    <!-- Header END -->
+
+    <!-- Main -->
+    <main>
+      <section class="hero-section">
+        <div class="hero-section__inner">
+          <div class="hero-section__body text-white">
+            <h4 class="hero-section__subtitle">We are your partner for</h4>
+            <h1 class="hero-section__title caption caption--lg">Cyber Security</h1>
+            <div class="splide hero-slider" aria-label="Hero Section Slider">
+              <div class="hero-slider__controls splide__arrows">
+                <div class="slider-arrows splide__arrows">
+                  <button type="button" class="slider-arrow splide__arrow--prev slider-arrow_prev">
+                    <svg width="16" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z" fill="#fff"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="slider-arrow splide__arrow--next slider-arrow_next">
+                    <svg width="16" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z" fill="#fff"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="splide__track hero-slider__body">
+                <ul class="splide__list">
+                  <li class="splide__slide hero-slider__slide">
+                    <ul class="hero-slider__list">
+                      <li class="hero-slider__item">
+                        <a href="#" class="hero-slider__link active">Penetration testing</a>
+                      </li>
+                      <li class="hero-slider__item">
+                        <a href="#" class="hero-slider__link">Web & app penetration testing</a>
+                      </li>
+                      <li class="hero-slider__item">
+                        <a href="#" class="hero-slider__link">Internal network pen testing</a>
+                      </li>
+                      <li class="hero-slider__item">
+                        <a href="#" class="hero-slider__link">Inhouse hacking attack</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="splide__slide hero-slider__slide">
+                    <ul class="hero-slider__list">
+                      <li class="hero-slider__item">
+                        <a href="#" class="hero-slider__link">IIoT Security Analysis</a>
+                      </li>
+                      <li class="hero-slider__item">
+                        <a href="#" class="hero-slider__link">Phisical Pen-Testing</a>
+                      </li>
+                      <li class="hero-slider__item">
+                        <a href="#" class="hero-slider__link">OT Security</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="splide__slide hero-slider__slide">
+                    <ul class="hero-slider__list">
+                      <li class="hero-slider__item">
+                        <a href="#" class="hero-slider__link">Web & app penetration testing</a>
+                      </li>
+                      <li class="hero-slider__item">
+                        <a href="#" class="hero-slider__link">Hacking simulation</a>
+                      </li>
+                      <li class="hero-slider__item">
+                        <a href="#" class="hero-slider__link">Internal network penetration
+                          testing</a>
+                      </li>
+                      <li class="hero-slider__item">
+                        <a href="#" class="hero-slider__link">OWASP Top 10 audit</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="hero-section__btn btn btn-white">Discover our services</a>
+          </div>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="container benefits__inner">
+          <div class="benefits__body">
+            <h3 class="caption caption--md">
+              We are not mainstream
+            </h3>
+            <picture><source srcset="img/img2.webp" type="image/webp"><img src="img/img2.png" class="benefits__img--mob" width="300" height="300" alt=""></picture>
+            <p class="text text--black">
+              As an international consulting company with experienced IT experts, abit takes comprehensive
+              care of the security of your IT systems. With a focus on OT/IoT security, penetration
+              testing, social awareness, DevSecOps, managed security and software development, we secure
+              your business and provide you with innovative applications. abit guarantees customized
+              strategies, fast implementation and measurable results.
+            </p>
+            <a href="#" class="btn btn-black-bg benefits__btn">Get in touch</a>
+          </div>
+          <picture><source srcset="img/img2.webp" type="image/webp"><img src="img/img2.png" width="500" height="500" class="benefits__img" alt=""></picture>
+        </div>
+      </section>
+      <section class="home-general bg-black">
+        <div class="container home-general__inner">
+          <div class="home-general__body">
+            <h3 class="caption home-general__title">We are your partner for </h3>
+            <h2 class="caption caption--lg home-general__text">Cyber security</h2>
+            <h2 class="caption caption--lg home-general__text">Software & app</h2>
+            <h2 class="caption caption--lg home-general__text">Digital consulting</h2>
+          </div>
+          <picture><source srcset="img/img3.webp" type="image/webp"><img src="img/img3.png" width="662" height="502" class="home-general__img" alt=""></picture>
+        </div>
+      </section>
+      <section class="services-list">
+        <div class="container">
+          <h2 class="caption caption--xl services-list__caption">Our services</h2>
+          <h3 class="caption caption--md">Cyber Security</h3>
+          <div class="services-list__body">
+            <div class="services-list__col">
+              <h4 class="services-list__title">Penetration testing</h4>
+              <a href="penetration-testing.html" class="services-list__link">Web & app penetration testing</a>
+              <a href="penetration-testing.html" class="services-list__link">Physical penetration testing</a>
+              <a href="penetration-testing.html" class="services-list__link">Hacking simulation</a>
+              <a href="penetration-testing.html" class="services-list__link">Internal network penetration testing</a>
+              <a href="penetration-testing.html" class="services-list__link">OWASP Top 10 audit</a>
+              <a href="penetration-testing.html" class="btn btn-primary services-list__btn">Learn more</a>
+            </div>
+            <div class="services-list__col">
+              <h4 class="services-list__title">IIoT Security</h4>
+              <a href="ot.html" class="services-list__link">OT security in industrial IoT</a>
+              <a href="ot.html" class="services-list__link">IoT OWASP Top 10 audit</a>
+              <a href="ot.html" class="services-list__link">Phishing simulation</a>
+              <a href="ot.html" class="services-list__link">Consultancy</a>
+              <a href="ot.html" class="services-list__link">IT-OT convergence</a>
+              <a href="ot.html" class="services-list__link">OT security monitoring</a>
+              <a href="ot.html" class="btn btn-primary services-list__btn">Learn more</a>
+            </div>
+            <div class="services-list__col">
+              <h4 class="services-list__title">Social awareness</h4>
+              <a href="social-awareness.html" class="services-list__link">Phishing simulation</a>
+              <a href="social-awareness.html" class="services-list__link">Social awareness training</a>
+              <a href="social-awareness.html" class="services-list__link">Social engineering attack</a>
+              <a href="social-awareness.html" class="btn btn-primary services-list__btn">Learn more</a>
+            </div>
+            <div class="services-list__col">
+              <h4 class="services-list__title">DevSecOps</h4>
+              <a href="DevSecOps.html" class="services-list__link">Software security design review</a>
+              <a href="DevSecOps.html" class="services-list__link">Static code analysis</a>
+              <a href="DevSecOps.html" class="services-list__link">Container orchestration</a>
+              <a href="DevSecOps.html" class="btn btn-primary services-list__btn">Learn more</a>
+            </div>
+            <div class="services-list__col">
+              <h4 class="services-list__title">Manged Security</h4>
+              <a href="managed-security.html" class="services-list__link">Digital Signature</a>
+              <a href="managed-security.html" class="services-list__link">24/7 Monitoring</a>
+              <a href="managed-security.html" class="services-list__link">Encryption</a>
+              <a href="managed-security.html" class="btn btn-primary services-list__btn">Learn more</a>
+            </div>
+            <div class="services-list__col">
+              <h4 class="services-list__title">Cyber Sec architecture</h4>
+              <a href="#" class="services-list__link">Cloud cyber security</a>
+              <a href="#" class="btn btn-primary services-list__btn">Learn more</a>
+            </div>
+            <div class="services-list__col">
+              <h4 class="services-list__title">Cloud services</h4>
+              <a href="#" class="services-list__link">Migration to cloud</a>
+              <a href="#" class="services-list__link">Private / Hybrid Clouds</a>
+              <a href="#" class="services-list__link">Cloud support / DevOps</a>
+              <a href="#" class="btn btn-primary services-list__btn">Learn more</a>
+            </div>
+          </div>
+          <h3 class="caption caption--md">Software & app</h3>
+          <div class="services-list__body">
+            <div class="services-list__col">
+              <h4 class="services-list__title">Software development</h4>
+              <a href="#" class="services-list__link">Custom development</a>
+              <a href="#" class="services-list__link">Web applications</a>
+              <a href="#" class="services-list__link">App development</a>
+              <a href="#" class="services-list__link">Blockchain</a>
+              <a href="#" class="btn btn-primary services-list__btn">Learn more</a>
+            </div>
+            <div class="services-list__col">
+              <h4 class="services-list__title">Mobile app</h4>
+              <a href="#" class="services-list__link">iOS App</a>
+              <a href="#" class="services-list__link">Android App</a>
+              <a href="#" class="services-list__link">PWA </a>
+              <a href="#" class="btn btn-primary services-list__btn">Learn more</a>
+            </div>
+            <div class="services-list__col">
+              <h4 class="services-list__title">IT Support</h4>
+              <a href="#" class="services-list__link">Backup Cloud & restore</a>
+              <a href="#" class="services-list__link">Server support</a>
+              <a href="#" class="services-list__link">Installation of services</a>
+              <a href="#" class="services-list__link">1st & 2nd level support</a>
+              <a href="#" class="btn btn-primary services-list__btn">Learn more</a>
+            </div>
+            <div class="services-list__col">
+              <h4 class="services-list__title">IT Consulting</h4>
+              <a href="#" class="services-list__link">Network implementation</a>
+              <a href="#" class="services-list__link">IT infrastructure implementation </a>
+              <a href="#" class="btn btn-primary services-list__btn">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider-section memberships bg-gray">
+        <div class="container">
+          <div class="splide memberships-slider" aria-label="Memberships Slider">
+            <div class="slider-section__head">
+              <h3 class="caption memberships__title">Our Memberships</h3>
+              <div class="slider__controls splide__arrows">
+                <div class="slider-arrows splide__arrows">
+                  <button type="button" class="slider-arrow splide__arrow--prev slider-arrow_prev">
+                    <svg width="16" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="slider-arrow splide__arrow--next slider-arrow_next">
+                    <svg width="16" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z" fill="#000"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide memberships-slide">
+                  <div class="memberships-slide__body bg-white">
+                    <h4 class="memberships-slide__title">digitalHub Aachen</h4>
+                    <p class="memberships-slide__text text">
+                      The digitalHUB Aachen e. V. is promoting the digitalization of the economy
+                      and the public sector in Germany. The digitalHUB Aachen brings IT-SMEs
+                      together with classic SMEs and industry to jointly develop and realize new
+                      digital business models. It is supported by governmental and scientific
+                      institutions such as universities and ministries.
+                    </p>
+                  </div>
+                  <div class="memberships-slide__logo">
+                    <picture><source srcset="img/slider-logo1.webp" type="image/webp"><img src="img/slider-logo1.png" width="213" height="100" alt="Memberships Logo"></picture>
+                  </div>
+                </li>
+                <li class="splide__slide memberships-slide">
+                  <div class="memberships-slide__body bg-white">
+                    <h4 class="memberships-slide__title">TASMU Digital Valley</h4>
+                    <p class="memberships-slide__text text">
+                      Tasmu is a program developed by Qatar's Ministry of Communications and
+                      Information Technology to strengthen Qatar's digital ecosystem. The program
+                      is designed as an innovation cluster where different sectors can come
+                      together to realize the vision of Smart Qatar.
+                    </p>
+                  </div>
+                  <div class="memberships-slide__logo">
+                    <picture><source srcset="img/slider-logo2.webp" type="image/webp"><img src="img/slider-logo2.png" width="97" height="105" alt="Memberships Logo"></picture>
+                  </div>
+                </li>
+                <li class="splide__slide memberships-slide">
+                  <div class="memberships-slide__body bg-white">
+                    <h4 class="memberships-slide__title">Cyber Alliance Germany</h4>
+                    <p class="memberships-slide__text text">
+                      The digitalHUB Aachen e. V. is promoting the digitalization of the economy
+                      and the public sector in Germany. The digitalHUB Aachen brings IT-SMEs
+                      together with classic SMEs and industry to jointly develop and realize new
+                      digital business models. It is supported by governmental and scientific
+                      institutions such as universities and ministries.
+                    </p>
+                  </div>
+                  <div class="memberships-slide__logo">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners-section">
+        <div class="container">
+          <div class="partners-section__body">
+            <h3 class="caption">We would like to thank our partners and customers for the good cooperation
+            </h3>
+            <div class="partners-box">
+              <div class="partners-box__item">
+                <picture><source srcset="img//partners-logo/partners-1.webp" type="image/webp"><img src="img//partners-logo/partners-1.png" width="135" height="145" class="partners-box__img" alt=""></picture>
+                <h4 class="partners-box__title">Pallua Clinic International</h4>
+                <p class="partners-box__text">Pallua Clinic from Düsseldorf was founded by Prof. Dr. Dr.
+                  med. Norberto Pallua, one of the most renowned plastic surgery doctors. Prior to
+                  that, Prof. Pallua was Director of the Clinic for Plastic and Burn Surgery at the
+                  University Hospital Aachen and also Professor for Plastic Surgery, Hand and Burn
+                  Surgery. Pallua Clinic offers its patients the safest methods in the field of
+                  plastic surgery. The doctors are frequently invited as speakers or course
+                  instructors at national and international conferences. </p>
+              </div>
+              <div class="partners-box__item">
+                <picture><source srcset="img//partners-logo/partners-2.webp" type="image/webp"><img src="img//partners-logo/partners-2.png" width="188" height="92" class="partners-box__img" alt=""></picture>
+                <h4 class="partners-box__title">Aconity3D</h4>
+                <p class="partners-box__text">
+                  Aconity3D GmbH from Aachen is one of the technology leaders in the field of additive
+                  manufacturing. Aconity3D produces machines for laser-based 3D printing of metals.
+                  Its customers in the field of research and development, such as universities and
+                  companies in the automotive, aerospace, medical technology and toolmaking sectors,
+                  have the highest demands on the machines they use. Aconity3D is internationally
+                  active and has a branch office in the United States.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="partners-logo">
+            <picture><source srcset="img//partners-logo/partners-3.webp" type="image/webp"><img src="img//partners-logo/partners-3.png" width="200" height="20" alt="partners logo"></picture>
+            <picture><source srcset="img//partners-logo/partners-4.webp" type="image/webp"><img src="img//partners-logo/partners-4.png" width="232" height="65" alt="partners logo"></picture>
+            <picture><source srcset="img//partners-logo/partners-5.webp" type="image/webp"><img src="img//partners-logo/partners-5.png" width="220" height="74" alt="partners logo"></picture>
+            <picture><source srcset="img//partners-logo/partners-6.webp" type="image/webp"><img src="img//partners-logo/partners-6.png" width="187" height="52" alt="partners logo"></picture>
+            <picture><source srcset="img//partners-logo/partners-7.webp" type="image/webp"><img src="img//partners-logo/partners-7.png" width="300" height="71" alt="partners logo"></picture>
+            <picture><source srcset="img//partners-logo/partners-8.webp" type="image/webp"><img src="img//partners-logo/partners-8.png" width="220" height="0" alt="partners logo"></picture>
+            <picture><source srcset="img//partners-logo/partners-2.webp" type="image/webp"><img src="img//partners-logo/partners-2.png" width="150" height="73" alt="partners logo"></picture>
+            <picture><source srcset="img//partners-logo/partners-9.webp" type="image/webp"><img src="img//partners-logo/partners-9.png" width="170" height="34" alt="partners logo"></picture>
+            <picture><source srcset="img//partners-logo/partners-10.webp" type="image/webp"><img src="img//partners-logo/partners-10.png" width="143" height="74" alt="partners logo"></picture>
+            <picture><source srcset="img//partners-logo/partners-11.webp" type="image/webp"><img src="img//partners-logo/partners-11.png" width="169" height="74" alt="partners logo"></picture>
+            <picture><source srcset="img//partners-logo/partners-12.webp" type="image/webp"><img src="img//partners-logo/partners-12.png" width="252" height="75" alt="partners logo"></picture>
+            <picture><source srcset="img//partners-logo/partners-13.webp" type="image/webp"><img src="img//partners-logo/partners-13.png" width="247" height="68" alt="partners logo"></picture>
+
+          </div>
+        </div>
+      </section>
+      <section class="slider-section services-slider bg-black">
+        <div class="container">
+          <div class="splide services-slider__body" aria-label="services Slider">
+            <div class="slider-section__head">
+              <h3 class="caption caption--md">Our cyber security services</h3>
+              <div class="slider__controls splide__arrows">
+                <div class="slider-arrows splide__arrows">
+                  <button type="button" class="slider-arrow splide__arrow--prev slider-arrow_prev">
+                    <svg width="16" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z" fill="#fff"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="slider-arrow splide__arrow--next slider-arrow_next">
+                    <svg width="16" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z" fill="#fff"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide services-slide">
+                  <h4 class="services-slide__title">Cyber Security strategy</h4>
+                  <p class="services-slide__text">We create a security strategy for you - tailored to
+                    your needs and your individual security gaps. Act preventively before it's too
+                    late and hackers have attacked you!</p>
+                  <a href="#" class="btn btn-white-bg services-slide__btn">Learn more</a>
+                </li>
+                <li class="splide__slide services-slide">
+                  <h4 class="services-slide__title">Hacking attack simulation</h4>
+                  <p class="services-slide__text">Our hackers check the security of all system
+                    components of your network with means and methods that are suitable for
+                    unauthorized penetration into the system. </p>
+                  <a href="#" class="btn btn-white-bg services-slide__btn">Learn more</a>
+                </li>
+                <li class="splide__slide services-slide">
+                  <h4 class="services-slide__title">Social awareness of team</h4>
+                  <p class="services-slide__text">Your team must be trained so that no employee
+                    becomes a gateway for hacking attacks. For this purpose we conduct social
+                    awareness tests.</p>
+                  <a href="#" class="btn btn-white-bg services-slide__btn">Learn more</a>
+                </li>
+                <li class="splide__slide services-slide">
+                  <h4 class="services-slide__title">Be prepared for a
+                    hacking attack!</h4>
+                  <p class="services-slide__text">It's only a matter of time. Be ready when a hacking
+                    attack happens to protect your business. </p>
+                  <a href="#" class="btn btn-white-bg services-slide__btn">Learn more</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="intro-section bg-black">
+        <div class="container intro-section__inner">
+          <div class="intro-section__body">
+            <h3 class="caption caption--md intro-section__title">Why Abit?</h3>
+            <p class="intro-section__text">abit is an IT company from Germany that focuses on digitalisation
+              and cyber security in the
+              private sector as well as projects mandated by the government. Our developers, hackers and
+              engineers have experience in highly sensitive industries such as medicine, pharmaceuticals
+              (GMP), finance, chemicals, construction and mechanical engineering. We dedicate ourselves to
+              your project with passion and expertise to create secure and highly advanced IT solutions
+              for you.</p>
+          </div>
+          <picture><source srcset="img/intro-mg1.webp" type="image/webp"><img src="img/intro-mg1.png" width="568" height="821" class="intro-section__img" alt="Images"></picture>
+        </div>
+      </section>
+    </main>
+    <!-- Main END -->
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__left bg-primary">
+            <form action="#" class="footer-form">
+                <h3 class="footer-form__title">Stay in touch</h3>
+                <div class="footer-form__field field-box">
+                    <input type="text" class="footer__field field-box__input">
+                    <button class="field-box__btn">
+                        <img src="img/field-arrow.svg" height="30" width="40" alt="">
+                    </button>
+                </div>
+                <label class="footer-form__checkbox">I have read the privacy policy and agree to it.
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+            </form>
+            <p class="copyright">Copyright 2022 - All Rights Reserved</p>
+        </div>
+        <div class="footer__right footer-right">
+            <div class="footer__col">
+                <h5 class="footer__title">
+                    OUR OFFICES
+                </h5>
+                <a href="#" target="_blank" class="footer__link">abit GmbH
+                    in Digital Hub Aachen
+                    Jülicher Straße 72
+                    52070 Aachen
+                    Germany</a>
+
+                <a href="#" class="btn btn-white footer-right__bottom">View on map</a>
+            </div>
+            <div class="footer__col">
+                <h5 class="footer__title">
+                    CONTACT US
+                </h5>
+                <a href="#" target="_blank" class="footer__link">info@abit.io</a>
+                <a href="#" class="btn btn-white">Schedule meeting</a>
+
+                <div class="social footer-right__bottom">
+                    <a href="http://" target="_blank">
+                        <img src="img/linkedin.svg" alt="Social Icon"></a>
+                    <a href="http://" target="_blank">
+                        <img src="img/instagram.svg" alt="Social Icon"></a>
+                    <a href="http://" target="_blank">
+                        <img src="img/dribble.svg" alt="Social Icon"></a>
+                    <a href="http://" target="_blank">
+                        <img src="img/github.svg" alt="Social Icon"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- Footer END -->
+  
+  <!-- Wrap END -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+  <script src="js/main.js" defer="defer"></script>
+
+</body>
+
+</html>

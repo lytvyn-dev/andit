@@ -1,0 +1,82 @@
+@use "abstracts" as a;
+
+.select {
+	position: relative;
+
+	min-width: 89px;
+
+	&__button {
+		position: relative;
+		display: block;
+		cursor: pointer;
+		padding-left: 5px;
+		padding-right: 15px;
+		text-align: left;
+		width: 70px;
+		background: none;
+		border: none;
+		color: a.$color-black-1;
+
+		// &::after {
+		//   content: "";
+		//   position: absolute;
+		//   border: solid black;
+		//   border-width: 0 3px 3px 0;
+		//   display: inline-block;
+		//   padding: 3px;
+		//   top: 25%;
+		//   right: 13px;
+		//   transform: rotate(45deg);
+		//   -webkit-transform: rotate(45deg);
+		//   width: 10px;
+		//   height: 10px;
+		//   pointer-events: none;
+		//   transition: all 0.3s ease;
+		// }
+		&_active {
+			border-color: #737373;
+			box-shadow: 0px 9px 28px 3px #00000008;
+			// &::after {
+			//   transform: rotate(-135deg);
+			//   -webkit-transform: rotate(-135deg);
+			// }
+		}
+	}
+
+	&__list {
+		position: absolute;
+		left: -11px;
+		top: 110%;
+		background: #ffffff;
+		box-shadow: 0px 9px 28px 3px #00000008;
+		max-height: 230px;
+		border-radius: 6px;
+		width: fit-content;
+		opacity: 0;
+		pointer-events: none;
+		z-index: 1;
+
+		&_visible {
+			opacity: 1;
+			pointer-events: all;
+		}
+
+		&_top {
+			top: auto;
+			bottom: 100%;
+		}
+	}
+
+	&__item {
+		padding: 13px 20px;
+		cursor: pointer;
+
+		&:hover {
+			background: a.$color-gray-1;
+		}
+	}
+
+	&__input-hidden {
+		display: none;
+	}
+}

@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+// ====================
+// ? Vendors
+// ====================
+
+// @use "vendors/";
+
+// ====================
+// ? Base
+// ====================
+
+@use "base/reset";
+@use "base/typography";
+@use "base/global";
+
+// ====================
+// ? Layout
+// ====================
+
+@use "layout/header";
+
+@use "layout/footer";
+
+
+// ====================
+// ? Components
+// ====================
+
+@use "components/buttons";
+@use "components/dropdown";
+@use "components/checkbox";
+@use "components/menu-burger";
+@use "components/select";
+@use "components/slider";
+// ====================
+// ? Pages
+// ====================
+
+@use "pages/home";
+@use "pages/product";
+

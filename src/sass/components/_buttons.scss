@@ -1,0 +1,72 @@
+@use "abstracts" as a;
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  white-space: nowrap;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 16px 40px;
+  transition: all .3s linear;
+}
+.btn-white {
+  color: a.$color-white-1;
+  background: none;
+  border: 1px solid a.$color-white-1;
+  &:hover {
+    color: a.$color-black-1;
+    background: a.$color-white-1;
+  }
+}
+.btn-white-bg {
+    color: a.$color-black-1;
+    background: a.$color-white-1;
+    border: 1px solid a.$color-white-1;
+    &:hover {
+      color: a.$color-white-1;
+      background: none;
+    }
+}
+.btn-black {
+  color: a.$color-white-1;
+  background: none;
+  border: 1px solid a.$color-black-1;
+  &:hover {
+    color: a.$color-black-1;
+    background: a.$color-white-1;
+  }
+}
+.btn-black-bg {
+  color: a.$color-white-1;
+  background: a.$color-black-1;
+  border: 1px solid a.$color-black-1;
+  &:hover {
+    color: a.$color-black-1;
+    background: none;
+  }
+}
+.btn-primary {
+  color: a.$color-primary-1;
+  background: none;
+  border: 1px solid a.$color-primary-1;
+  &:hover {
+    color: a.$color-white-1;
+    background: a.$color-primary-1;
+  }
+}
+.btn-primary-bg {
+  color: a.$color-white-1;
+  background: a.$color-primary-1;
+  border: 1px solid a.$color-primary-1;
+  &:hover {
+    color:a.$color-primary-1;
+    background: a.$color-white-1;
+  }
+}
+
+

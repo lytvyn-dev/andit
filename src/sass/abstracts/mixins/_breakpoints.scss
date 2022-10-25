@@ -1,0 +1,27 @@
+$_breakpoints: (
+  "xs": 360px,
+  "sm": 560px,
+  "md2": 768px,
+  "md1": 992px,
+  "md-wide": 1024px,
+  "lg": 1248px,
+  "xl": 1680px,
+  "xxl": 1920px,
+);
+
+@mixin breakpoint($width, $type: min) {
+  @if map_has_key($_breakpoints, $width) {
+    $width: map_get($_breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+@mixin ie-only {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    @content;
+  }
+}

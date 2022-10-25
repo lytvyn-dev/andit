@@ -1,0 +1,46 @@
+@use "abstracts" as a;
+
+.menu__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 35px;
+    z-index: 5;
+    cursor: pointer;
+    @include a.breakpoint(md1) {
+        display: none;
+    }
+}
+.menu__icon span {
+    background: #90959f;
+    border-radius: 10px;
+    height: 4px;
+    margin: 3px 0;
+    transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+.menu__icon span:nth-of-type(1) {
+    width: 50%;
+}
+
+.menu__icon span:nth-of-type(2) {
+    width: 100%;
+}
+
+.menu__icon span:nth-of-type(3) {
+    width: 75%;
+}
+.menu__icon._active span:nth-of-type(1) {
+    transform-origin: bottom;
+    transform: rotatez(45deg) translate(8px, 12px);
+}
+
+.menu__icon._active span:nth-of-type(2) {
+    transform-origin: top;
+    transform: rotatez(-45deg);
+}
+
+.menu__icon._active span:nth-of-type(3) {
+    transform-origin: bottom;
+    width: 50%;
+    transform: translate(-15px, -17px) rotatez(45deg);
+}
